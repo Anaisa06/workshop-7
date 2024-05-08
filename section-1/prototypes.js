@@ -24,3 +24,7 @@ Student.prototype.presentarExamen = function(){
 }
 
 Student.prototype.presentarExamen()
+
+Student.prototype.saludar = function () {
+    return `${Person.prototype.saludar.call(this)} Y soy un estudiante.`;
+  };
